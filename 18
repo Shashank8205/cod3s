@@ -1,0 +1,5 @@
+18.pushing the docker image into docker hub
+
+docker build -t java-app .
+docker tag java-app shashank8205/java-app:v1
+docker push shashank8205/java-app:v1
