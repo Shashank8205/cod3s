@@ -1,2 +1,9 @@
+Dockerfile:
+FROM eclipse-temurin:17-jdk 
+WORKDIR /app
+COPY . /app
+RUN javac Grade.java
+CMD ["java","Grade"]
+
 docker build -t java-app .
 docker run -d -t java-app
