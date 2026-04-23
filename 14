@@ -1,6 +1,5 @@
 jacoco plugin 
 
-<build>
     <plugins>
         <plugin>
             <groupId>org.jacoco</groupId>
@@ -22,6 +21,5 @@ jacoco plugin
             </executions>
         </plugin>
     </plugins>
-</build>
 
 -------------------------------------------------------------------------------------------------
