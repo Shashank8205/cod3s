@@ -1,0 +1,43 @@
+Verify installation
+docker --version
+-------------------------------------------------------------------------------------------------
+List running containers
+docker ps
+-------------------------------------------------------------------------------------------------
+List all containers
+docker ps -a
+-------------------------------------------------------------------------------------------------
+List images
+docker images
+-------------------------------------------------------------------------------------------------
+Task 1 — Run First Container
+Run a sample container:
+docker run hello-world
+
+What happens:
+1.	Docker checks for image locally.
+2.	If not found, it downloads it.
+3.	Creates a container.
+4.	Runs the container.
+5.	Displays a success message.
+-------------------------------------------------------------------------------------------------
+Task 2 — Run a Web Server Container
+Pull Nginx image:
+docker pull nginx
+
+Run container:
+docker run -d -p 8080:80 nginx
+
+Open browser:
+http://localhost:8080
+You will see the Nginx welcome page.
+-------------------------------------------------------------------------------------------------
+Task 3 — Manage Containers
+List containers:
+docker ps
+
+Stop container:
+docker stop <container_id>
+
+Remove container:
+docker rm <container_id>
